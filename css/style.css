@@ -1,16 +1,20 @@
 body {
    font-family: "Roboto", sans-serif;
    color: #434455;
-   font-size:16px;
+   font-size: 16px;
    background: #fff;
    font-style: normal;
-   font-weight:400;
+   font-weight: 400;
+   min-width: 100%;
 }
 a {
    text-decoration: none;
 }
-ul, ol {
+ul,
+ol {
    list-style-type: none;
+   margin: 0;
+   padding-left: 0;
 }
 
 button {
@@ -18,13 +22,46 @@ button {
    color: currentColor;
    cursor: pointer;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+}
+img {
+   display: block;
+   max-width: 100%;
+}
 
 /*? Header */
+.section {
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+.container {
+   width: 1158px;
+   padding-left: 16px;
+   padding-right: 16px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.container-header {
+   display: flex;
+   flex-shrink: 0;
+   border-bottom: 1px solid #e7e9fc;
+   background: #fff;
+   padding: 25.5px 0 25.5px 0;
+}
 
-.menu {}
+.menu {
+   display: flex;
+}
 
 .menu-logo {
-   color: #4D5AE5;
+   color: #4d5ae5;
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    font-weight: 700;
@@ -34,15 +71,21 @@ button {
 }
 
 .menu-logo-item {
-   color: #2E2F42;
+   color: #2e2f42;
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    font-weight: 700;
    line-height: 1.17;
    letter-spacing: 0.03em;
    text-transform: uppercase;
+   padding: 0 72px 0 0;
 }
 
+.menu-item-block {
+   display: flex;
+   gap: 40px;
+   padding: 0 332px 0 0;
+}
 .menu-item {
 }
 
@@ -52,60 +95,100 @@ button {
    line-height: 1.5;
    letter-spacing: 0.02em;
 }
-.item-adr{
+.item-adr {
    color: #434455;
    line-height: 1.5;
    letter-spacing: 0.02em;
 }
 .item-link:hover,
-.item-link:focus{
-   color: #404BBF;
+.item-link:focus {
+   color: #404bbf;
 }
 .item-adr:hover,
 .item-adr:focus {
-   color: #404BBF;
+   color: #404bbf;
 }
-
+.menu-item-contact {
+   display: flex;
+   flex-shrink: 0;
+   gap: 40px;
+   justify-content: flex-end;
+}
 .contacts {
-   font-style: normal
+   font-style: normal;
+   margin-right: 0;
 }
 
 /*? Hero */
 
 .hero {
-   background-color: #2E2F42;
+   background-color: #2e2f42;
 }
-
+.container-hero {
+}
 .hero-title {
-   color: #FFF;
+   color: #fff;
    text-align: center;
    font-size: 56px;
    font-weight: 700;
    line-height: 1.07;
    letter-spacing: 0.02em;
+   width: 496px;
+   padding: 188px 0 48px 0;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .hero-button {
    font-family: "Roboto", sans-serif;
-   background-color: #4D5AE5;
-   color: #FFF;
+   background-color: #4d5ae5;
+   color: #fff;
    font-weight: 500;
    line-height: 1.5;
    letter-spacing: 0.04em;
+   display: inline-flex;
+   padding: 16px 32px;
+   align-items: flex-start;
+   gap: 10px;
+   border-radius: 4px;
+   background: #4d5ae5;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover,
-.hero-button:focus{
-   background-color: #404BBF
+.hero-button:focus {
+   background-color: #404bbf;
 }
 
 /*? Princips */
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
 
-.princips {}
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
 
-.princips-item {}
+.princips-item-ul {
+   display: flex;
+   gap: 24px;
+   padding: 120px 0;
+}
+.princips-item {
+   display: flex;
+   width: 264px;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 8px;
+}
 
 .princips-title {
-   color: #2E2F42;
+   color: #2e2f42;
    font-size: 20px;
    font-weight: 500;
    line-height: 1.2;
@@ -120,27 +203,42 @@ button {
 /*? Team */
 
 .team {
-   background-color: #F4F4FD;
+   background-color: #f4f4fd;
 }
-
+.team-section {
+   display: flex;
+   padding-bottom: 120px;
+   justify-content: center;
+   align-items: center;
+   gap: 32px;
+}
 .team-title {
-   color: #2E2F42;
+   color: #2e2f42;
    text-align: center;
    font-size: 36px;
    font-weight: 700;
    line-height: 1.11;
    letter-spacing: 0.02em;
    text-transform: capitalize;
+   padding-top: 120px;
+   padding-bottom: 72px;
 }
 
 .team-list {
-   background: #FFF;
+   background: #fff;
 }
-
-.team-img {}
-
+.team-block {
+   width: 232px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
 .name-title {
-   color: #2E2F42;
+   color: #2e2f42;
    text-align: center;
    font-size: 20px;
    font-weight: 500;
@@ -156,26 +254,46 @@ button {
 
 /*? Portfolio */
 
-.portfolio {}
+.portfolio {
+   display: flex;
+   flex-shrink: 0;
+   flex-wrap: wrap;
+   gap: 24px;
+   padding-bottom: 120px;
+}
 
 .portfolio-title {
-   color: #2E2F42;
+   color: #2e2f42;
    text-align: center;
    font-size: 36px;
    font-weight: 700;
    line-height: 1.11;
    letter-spacing: 0.02em;
    text-transform: capitalize;
+   padding-top: 120px;
+   padding-bottom: 72px;
 }
 
+.port-block {
+   display: flex;
+   padding: 32px 16px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 8px;
+   align-self: stretch;
+}
 .port-list {
-   background-color: #FFF;
+   background-color: #fff;
+   border: 1px solid #e7e9fc;
+   width: calc((100% - 24px * 2) / 3);
 }
 
-.port-img {}
+.port-img {
+}
 
 .port-title {
-   color: #2E2F42;
+   color: #2e2f42;
    text-align: center;
    font-size: 20px;
    font-weight: 500;
@@ -192,11 +310,21 @@ button {
 /*? Footer */
 
 .footer {
-   background-color: #2E2F42;
+   background-color: #2e2f42;
+   width: 1440px;
+   height: 312px;
+   flex-shrink: 0;
+   display: flex;
 }
-
+.footer-block {
+   width: 71px;
+   height: 21px;
+   flex-direction: column;
+   justify-content: center;
+   padding-top: 101px;
+}
 .footer-logo {
-   color: #4D5AE5;
+   color: #4d5ae5;
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    font-weight: 700;
@@ -206,7 +334,7 @@ button {
 }
 
 .footer-logo-item {
-   color: #F4F4FD;
+   color: #f4f4fd;
    font-family: "Raleway", sans-serif;
    font-size: 18px;
    font-weight: 700;
@@ -216,8 +344,10 @@ button {
 }
 
 .footer-text {
-   color: #F4F4FD;
+   color: #f4f4fd;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   width: 264px;
+   padding-top: 18px;
+   padding-bottom: 100px;
 }
-
