@@ -51,13 +51,14 @@ img {
    margin-right: auto;
 }
 
-.cont-header {
+.container-header {
    display: flex;
    align-items: center;
 }
 .menu {
    display: flex;
    align-items: center;
+   margin-right: auto;
 }
 
 .menu-logo {
