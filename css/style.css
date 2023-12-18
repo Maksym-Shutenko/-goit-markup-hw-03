@@ -37,9 +37,12 @@ img {
 }
 
 /*? Header */
+.header {
+   border-bottom: 1px solid #e7e9fc;
+}
 .section {
-   padding-top: 60px;
-   padding-bottom: 60px;
+   padding-top: 120px;
+   padding-bottom: 12 0px;
 }
 .container {
    width: 1158px;
@@ -47,12 +50,7 @@ img {
    padding-right: 15px;
    margin-left: auto;
    margin-right: auto;
-}
-.container-header {
-   border-bottom: 1px solid #e7e9fc;
    display: flex;
-   flex-shrink: 0;
-   background: #fff;
 }
 
 .menu {
@@ -123,9 +121,9 @@ img {
 
 .hero {
    background-color: #2e2f42;
+   padding: 188px 0;
 }
 .container-hero {
-   padding: 188px 0;
 }
 .hero-title {
    color: #fff;
@@ -294,6 +292,7 @@ img {
    gap: 8px;
    align-self: stretch;
    border: 1px solid #e7e9fc;
+   border-top: none;
 }
 .port-list {
    background-color: #fff;
