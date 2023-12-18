@@ -41,8 +41,7 @@ img {
    border-bottom: 1px solid #e7e9fc;
 }
 .section {
-   padding-top: 120px;
-   padding-bottom: 12 0px;
+   padding: 120px 0;
 }
 .container {
    width: 1158px;
@@ -50,9 +49,12 @@ img {
    padding-right: 15px;
    margin-left: auto;
    margin-right: auto;
-   display: flex;
 }
 
+.cont-header {
+   display: flex;
+   align-items: center;
+}
 .menu {
    display: flex;
    align-items: center;
@@ -66,6 +68,7 @@ img {
    line-height: 1.17;
    letter-spacing: 0.03em;
    text-transform: uppercase;
+   margin-right: 76px;
 }
 
 .menu-logo-item {
@@ -82,7 +85,6 @@ img {
 .menu-item-block {
    display: flex;
    gap: 40px;
-   padding: 0 332px 0 0;
 }
 .menu-item {
    padding: 24px 0;
@@ -93,6 +95,7 @@ img {
    font-weight: 500;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   padding: 24px 0;
 }
 .item-adr {
    color: #434455;
@@ -114,7 +117,7 @@ img {
 }
 .contacts {
    font-style: normal;
-   margin-right: 0;
+   margin-right: auto;
 }
 
 /*? Hero */
@@ -126,13 +129,13 @@ img {
 .container-hero {
 }
 .hero-title {
+   max-width: 496px;
    color: #fff;
    text-align: center;
    font-size: 56px;
    font-weight: 700;
    line-height: 1.07;
    letter-spacing: 0.02em;
-   max-width: 469px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -353,6 +356,7 @@ img {
    line-height: 1.17;
    letter-spacing: 0.03em;
    text-transform: uppercase;
+   display: inline-block;
 }
 
 .footer-text {
